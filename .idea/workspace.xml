@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dae4ff07-e907-46a9-8a9e-c46e4dd28815" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Task9.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1oQbErUlvsE8no8Lm0gvvPpOzRt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/IntroductionToJava" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager" selected="Application.Task17">
+    <configuration name="Task13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson2.Task13" />
+      <module name="FreeIt_Roman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson2.Task14" />
+      <module name="FreeIt_Roman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson2.Task15" />
+      <module name="FreeIt_Roman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson2.Task16" />
+      <module name="FreeIt_Roman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson2.Task17" />
+      <module name="FreeIt_Roman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Task17" />
+        <item itemvalue="Application.Task16" />
+        <item itemvalue="Application.Task15" />
+        <item itemvalue="Application.Task14" />
+        <item itemvalue="Application.Task13" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dae4ff07-e907-46a9-8a9e-c46e4dd28815" name="Default Changelist" comment="" />
+      <created>1613221657547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613221657547</updated>
+      <workItem from="1613221660263" duration="1254000" />
+      <workItem from="1613242190968" duration="67000" />
+      <workItem from="1613331808241" duration="1467000" />
+      <workItem from="1613454331823" duration="216000" />
+      <workItem from="1613454622828" duration="11928000" />
+      <workItem from="1613590419299" duration="148000" />
+      <workItem from="1613670112763" duration="3021000" />
+      <workItem from="1613893453820" duration="2020000" />
+      <workItem from="1613934803970" duration="2687000" />
+      <workItem from="1613972515066" duration="2429000" />
+      <workItem from="1614058479061" duration="2514000" />
+      <workItem from="1614106355327" duration="1495000" />
+      <workItem from="1614107918556" duration="10095000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1613222066390</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613222066390</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+</project>
