@@ -1,4 +1,5 @@
 package lesson2;
+
 //Изменить пример с суммой чисел таким образом, чтобы рассчитывалась не сумма, а
 //произведение, т.е. факториал числа.
 public class Task9 {
@@ -21,9 +22,9 @@ public class Task9 {
     }
 
     public static int fac(int x) {
-       int factorial=1;
-        for(int i =1;i<=x;i++){
-            factorial=factorial*i;
+        int factorial = 1;
+        for (int i = 1; i <= x; i++) {
+            factorial = factorial * i;
         }
         return factorial;
     }

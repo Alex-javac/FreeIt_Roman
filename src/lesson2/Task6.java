@@ -10,35 +10,35 @@ public class Task6 {
         int num = random.nextInt(555);
         System.out.print(num);
 
-        if(numSize(num)){
+        if (numSize(num)) {
             System.out.println(" - это число трехзначное. ");
-        }else {
+        } else {
             System.out.println(" - это число не трехзначное. ");
         }
 
-        if(num % 10==7){
+        if (num % 10 == 7) {
             System.out.println("Последняя цифра 7");
-        }else {
+        } else {
             System.out.println("Последняя цифра не является семеркой!");
         }
 
-        if (num%2==0){
+        if (num % 2 == 0) {
             System.out.println("Число четное.");
-        }else {
+        } else {
             System.out.println("Число нечетное");
         }
 
     }
 
     public static boolean numSize(int num) {
-        boolean res=false;
-        int count =0;
+        boolean res = false;
+        int count = 0;
         while (num != 0) {
             count++;
             num /= 10;
         }
-        if (count==3){
-            res=true;
+        if (count == 3) {
+            res = true;
         }
         return res;
     }

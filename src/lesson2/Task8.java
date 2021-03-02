@@ -10,14 +10,14 @@ public class Task8 {
         Random random = new Random();
         int rub = random.nextInt(1000);
 
-        if(rub%100/10==1){
-            System.out.println(rub+" рублей");
-        }else if(rub%10==1){
-            System.out.println(rub+" рубль");
-        }else if (rub%10==2||rub%10==3||rub%10==4){
-            System.out.println(rub+" рубля");
-        }else{
-            System.out.println(rub+" рублей");
+        if (rub % 100 / 10 == 1) {
+            System.out.println(rub + " рублей");
+        } else if (rub % 10 == 1) {
+            System.out.println(rub + " рубль");
+        } else if (rub % 10 == 2 || rub % 10 == 3 || rub % 10 == 4) {
+            System.out.println(rub + " рубля");
+        } else {
+            System.out.println(rub + " рублей");
         }
     }
 }
