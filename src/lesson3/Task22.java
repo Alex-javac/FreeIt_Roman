@@ -1,6 +1,5 @@
 package lesson3;
 
-import java.math.BigInteger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -13,7 +12,7 @@ public class Task22 {
         Pattern hexes = Pattern.compile("0x[A-Fa-f0-9]{1,4}");//"0x\\p{XDigit}+"
         Matcher hexMatcher = hexes.matcher(str);
         System.out.println(str);
-        while (hexMatcher.find()){
+        while (hexMatcher.find()) {
             System.out.println(hexMatcher.group());
         }
     }

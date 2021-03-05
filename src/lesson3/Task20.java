@@ -1,8 +1,5 @@
 package lesson3;
 
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 //Имеется строка с текстом. Вывести текст, составленный из последних букв
