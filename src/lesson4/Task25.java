@@ -31,12 +31,31 @@ public class Task25 {
     }
 
     public boolean withdraw(int cash) {
-        if (cash % 20 != 0 || cash <= 0) {
+        if (cash % 10 != 0 || cash <= 0) {
             System.out.println("Данная операция не может быть выполнена");
             System.out.println("В банкомате только купюры номиналом 100 50 20.");
             return false;
         }
         int res = cash;
+        int countBanknote20 = 0;
+        if (cash % 100 == 10) {
+            res -= 60;
+            banknote20 -= 3;
+            countBanknote20 += 3;
+        } else if (cash % 100 == 30) {
+            res -= 80;
+            banknote20 -= 4;
+            countBanknote20 += 4;
+        } else if (cash % 100 == 60) {
+            res -= 20;
+            banknote20 -= 1;
+            countBanknote20 += 1;
+        } else if (cash % 100 == 80) {
+            res -= 40;
+            banknote20 -= 2;
+            countBanknote20 += 2;
+        }
+
 
         int qty100 = (res - res % 100) / 100;
         if (qty100 > banknote100) {
@@ -61,7 +80,7 @@ public class Task25 {
         } else {
             res -= qty20 * 20;
         }
-
+        countBanknote20 += qty20;
         if (res != 0) {
             System.out.println("Данная операция не может быть выполнена");
             System.out.println("В банкомате недостаточно купюр.");
@@ -70,7 +89,7 @@ public class Task25 {
         System.out.println("К выдаче: " + cash);
         System.out.println("Купюры по 100: " + qty100 + "шт.");
         System.out.println("Купюры по 50: " + qty50 + "шт.");
-        System.out.println("Купюры по 20: " + qty20 + "шт.");
+        System.out.println("Купюры по 20: " + countBanknote20 + "шт.");
 
         banknote100 -= qty100;
         banknote50 -= qty50;
@@ -95,7 +114,8 @@ public class Task25 {
         atm.addBanknote50(1);
         atm.addBanknote100(1);
         System.out.println(atm.toString());
-        System.out.println(atm.withdraw(5320));
+        System.out.println(atm.withdraw(310));
         System.out.println(atm.toString());
     }
 }
+
