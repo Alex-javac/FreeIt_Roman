@@ -39,21 +39,45 @@ public class Task25 {
         int res = cash;
         int countBanknote20 = 0;
         if (cash % 100 == 10) {
+            if(banknote20>=3){
             res -= 60;
             banknote20 -= 3;
             countBanknote20 += 3;
+            }else{
+                System.out.println("Данная операция не может быть выполнена");
+                System.out.println("В банкомате недостаточно купюр.");
+                return false;
+            }
         } else if (cash % 100 == 30) {
+            if(banknote20>=4){
             res -= 80;
             banknote20 -= 4;
             countBanknote20 += 4;
+            }else{
+                System.out.println("Данная операция не может быть выполнена");
+                System.out.println("В банкомате недостаточно купюр.");
+                return false;
+            }
         } else if (cash % 100 == 60) {
+                if(banknote20>=1){
             res -= 20;
             banknote20 -= 1;
             countBanknote20 += 1;
+                }else{
+                    System.out.println("Данная операция не может быть выполнена");
+                    System.out.println("В банкомате недостаточно купюр.");
+                    return false;
+                }
         } else if (cash % 100 == 80) {
+                if(banknote20>=2){
             res -= 40;
             banknote20 -= 2;
             countBanknote20 += 2;
+                }else{
+                    System.out.println("Данная операция не может быть выполнена");
+                    System.out.println("В банкомате недостаточно купюр.");
+                    return false;
+                }
         }
 
 
@@ -108,13 +132,13 @@ public class Task25 {
     }
 
     public static void main(String[] args) {
-        Task25 atm = new Task25(50, 100, 30);
+        Task25 atm = new Task25(20, 20, 10);
         System.out.println(atm.toString());
         atm.addBanknote20(1);
         atm.addBanknote50(1);
         atm.addBanknote100(1);
         System.out.println(atm.toString());
-        System.out.println(atm.withdraw(310));
+        System.out.println(atm.withdraw(360));
         System.out.println(atm.toString());
     }
 }
