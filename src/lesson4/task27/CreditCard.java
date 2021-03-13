@@ -1,27 +1,19 @@
 package lesson4.task27;
 
+import java.math.BigInteger;
 import java.util.GregorianCalendar;
 
-public class CreditCard extends Card {
-    private String customerName;
-    private GregorianCalendar expiryDate;
-    private int credit;
-    private double interest;
+public abstract class CreditCard extends Card {
+    String customerName;
+    GregorianCalendar expiryDate;
+    int credit;
+    double interest;
 
-   public CreditCard(){
-
-   }
-
-    public CreditCard(String customerName, GregorianCalendar expiryDate, double interest) {
-        this.customerName = customerName;
-        this.expiryDate = expiryDate;
-        this.interest = interest;
-    }
-
-    public CreditCard(long numbCard, int cvv, String customerName, GregorianCalendar expiryDate, double interest) {
+    public CreditCard(BigInteger numbCard, int cvv, String customerName, GregorianCalendar expiryDate, int credit, double interest) {
         super(numbCard, cvv);
         this.customerName = customerName;
         this.expiryDate = expiryDate;
+        this.credit = credit;
         this.interest = interest;
     }
 

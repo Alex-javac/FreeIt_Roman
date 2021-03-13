@@ -1,14 +1,12 @@
 package lesson4.task27;
 
-public class Card {
-    long numbCard;
-    int cvv;
+import java.math.BigInteger;
 
-    public Card(){
+public abstract class Card {
+     final BigInteger numbCard;
+    final int cvv;
 
-    }
-
-    public Card(long numbCard, int cvv) {
+    public Card(BigInteger numbCard, int cvv) {
         this.numbCard = numbCard;
         this.cvv = cvv;
     }

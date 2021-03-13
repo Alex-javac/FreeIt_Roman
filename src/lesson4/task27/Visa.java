@@ -1,5 +1,6 @@
 package lesson4.task27;
 
+import java.math.BigInteger;
 import java.util.GregorianCalendar;
 
 public class Visa extends DebitCard{
@@ -9,14 +10,18 @@ public class Visa extends DebitCard{
       return VALUTA;
    }
 
-   public Visa() {
-   }
+    public Visa(BigInteger numbCard, int cvv, String customerName, GregorianCalendar expiryDate, int found) {
+        super(numbCard, cvv, customerName, expiryDate, found);
+    }
 
-   public Visa(String customerName, GregorianCalendar expiryDate, int found) {
-      super(customerName, expiryDate, found);
-   }
-
-   public Visa(long numbCard, int cvv, String customerName, GregorianCalendar expiryDate, int found) {
-      super(numbCard, cvv, customerName, expiryDate, found);
-   }
+    @Override
+    public String toString() {
+        return "Visa{" +
+                "numbCard=" + numbCard +
+                ", cvv=" + cvv +
+                ", customerName='" + customerName + '\'' +
+                ", found=" + found +
+                ", VALUTA=" + VALUTA +
+                '}';
+    }
 }

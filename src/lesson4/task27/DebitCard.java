@@ -1,23 +1,14 @@
 package lesson4.task27;
 
+import java.math.BigInteger;
 import java.util.GregorianCalendar;
 
-public class DebitCard extends Card {
-    protected String customerName;
-    protected GregorianCalendar expiryDate;
-    protected int found;
+public abstract class DebitCard extends Card {
+    String customerName;
+    GregorianCalendar expiryDate;
+    int found;
 
-    public DebitCard() {
-
-    }
-
-    public DebitCard(String customerName, GregorianCalendar expiryDate, int found) {
-        this.customerName = customerName;
-        this.expiryDate = expiryDate;
-        this.found = found;
-    }
-
-    public DebitCard(long numbCard, int cvv, String customerName, GregorianCalendar expiryDate, int found) {
+    public DebitCard(BigInteger numbCard, int cvv, String customerName, GregorianCalendar expiryDate, int found) {
         super(numbCard, cvv);
         this.customerName = customerName;
         this.expiryDate = expiryDate;
