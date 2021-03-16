@@ -1,4 +1,7 @@
 package lesson5.transport;
+//В классе Наземный добавляются поля:
+// -Количество колёс
+// - Расход топлива(л/100км)
 
 public abstract class Land extends Transport{
 int wheels;
