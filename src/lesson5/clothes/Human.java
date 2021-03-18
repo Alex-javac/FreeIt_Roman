@@ -4,6 +4,16 @@ import lesson5.clothes.jacket.Jacket;
 import lesson5.clothes.shoes.Shoes;
 import lesson5.clothes.trousers.Trousers;
 
+//Создаём класс человек:
+//У человека поля:
+//-имя
+//-куртка
+//-штаны
+//-обувь
+//У человека есть 2 метода:
+//- одеться(вызываются методы надеть у всех вещей)
+//- раздеться (вызываются методы снять у всех вещей)
+
 public class Human implements IHuman {
     private String name;
     private Jacket jacket;
