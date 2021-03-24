@@ -34,11 +34,14 @@ public class Car extends Land {
         double distance;
         double gas;
         distance = maxSpeed * time;
-        gas = fuelConsumption * 0.01 * distance;
+        gas = wastedGas(distance);
 
         System.out.println("За время " + time + " часа, автомобиль " + brand + " двигаясь с максимальной скоростью "
                 + maxSpeed + " км/ч проедет " + distance + " км  и израсходует " + (int)gas + " литров топлива");
     }
+private double wastedGas(double distance){
+        return fuelConsumption * 0.01 * distance;
+}
 
     public double kilowatt(int enginePower) {
         return enginePower * 0.74;
