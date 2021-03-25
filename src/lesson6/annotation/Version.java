@@ -8,8 +8,9 @@ import java.lang.annotation.*;
 
 @Inherited
 @Target(ElementType.TYPE)
-@Retention(value= RetentionPolicy.RUNTIME)
+@Retention(value = RetentionPolicy.RUNTIME)
 public @interface Version {
-double numbVersion();
-String nameVersion();
+    double numbVersion();
+
+    String nameVersion();
 }
