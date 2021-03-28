@@ -1,7 +1,7 @@
 package lesson4.task26;
 
 public abstract class Oven extends KitchenAppliances{
-    boolean childProtection;
+   private boolean childProtection;
 
     public Oven(String firm, String model, double price, int width, int height, int weight, boolean childProtection) {
         super(firm, model, price, width, height, weight);

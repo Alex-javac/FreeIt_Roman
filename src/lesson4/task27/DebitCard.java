@@ -4,9 +4,9 @@ import java.math.BigInteger;
 import java.time.YearMonth;
 
 public abstract class DebitCard extends Card {
-    String customerName;
-    YearMonth expiryDate;
-    int found;
+   private String customerName;
+   private YearMonth expiryDate;
+   private int found;
 
     public DebitCard(BigInteger numbCard, int cvv, String customerName, YearMonth expiryDate, int found) {
         super(numbCard, cvv);

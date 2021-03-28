@@ -17,10 +17,10 @@ public class Visa extends DebitCard{
     @Override
     public String toString() {
         return "Visa{" +
-                "numbCard=" + numbCard +
-                ", cvv=" + cvv +
-                ", customerName='" + customerName + '\'' +
-                ", found=" + found +
+                "numbCard=" + getNumbCard()+
+                ", cvv=" + getCvv() +
+                ", customerName='" + getCustomerName() + '\'' +
+                ", found=" + getFound() +
                 ", VALUTA=" + VALUTA +
                 '}';
     }
