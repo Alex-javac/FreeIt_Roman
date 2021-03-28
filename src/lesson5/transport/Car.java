@@ -21,8 +21,8 @@ package lesson5.transport;
 //“За время 2,5 часа, автомобиль Audi двигаясь с максимальной скоростью 230 км/ч израсходует 46.0 литров топлива”
 //
 public class Car extends Land {
-    String bodyType;
-    int passengers;
+   private String bodyType;
+   private int passengers;
 
     public Car(int enginePower, int maxSpeed, int weight, String brand, int wheels, double fuelConsumption, String bodyType, int passengers) {
         super(enginePower, maxSpeed, weight, brand, wheels, fuelConsumption);

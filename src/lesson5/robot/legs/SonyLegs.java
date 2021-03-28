@@ -1,7 +1,7 @@
 package lesson5.robot.legs;
 
 public class SonyLegs implements ILeg {
-    int price;
+   private int price;
 
     public SonyLegs(int price) {
         this.price = price;

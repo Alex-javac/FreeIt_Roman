@@ -12,7 +12,7 @@ package lesson5.transport;
 // если кол-во груза которое нужно загрузить больше чем то которое может влезть в наш грузовик то выводим
 // “Вам нужен грузовик побольше ”.
 public class Truck extends Land {
-    int carrying;
+   private int carrying;
 
     public Truck(int enginePower, int maxSpeed, int weight, String brand, int wheels, double fuelConsumption, int carrying) {
         super(enginePower, maxSpeed, weight, brand, wheels, fuelConsumption);

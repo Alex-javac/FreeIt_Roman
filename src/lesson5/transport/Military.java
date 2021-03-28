@@ -13,8 +13,8 @@ package lesson5.transport;
 // то выводим “Катапультирование прошло успешно”, если false, то “У вас нет такой системы ”
 
 public class Military extends Air{
-boolean catapult;
-int rockets;
+private boolean catapult;
+private int rockets;
 
     public Military(int enginePower, int maxSpeed, int weight, String brand, int wingspan, int minLandingStrip, boolean catapult, int rockets) {
         super(enginePower, maxSpeed, weight, brand, wingspan, minLandingStrip);

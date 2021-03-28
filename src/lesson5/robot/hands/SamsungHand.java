@@ -1,7 +1,7 @@
 package lesson5.robot.hands;
 
 public class SamsungHand implements IHand {
-    int price;
+   private int price;
 
     public SamsungHand(int price) {
         this.price = price;

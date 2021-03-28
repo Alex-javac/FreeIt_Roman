@@ -23,7 +23,7 @@ public class Computer {
     private String ram;
     private String ssd;
     private int resource;
-    String str;
+    private String str;
     private boolean on = false;
     private boolean working = true;
 
