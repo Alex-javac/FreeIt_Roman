@@ -17,6 +17,8 @@ public class GameXO {
         char[][] field = new char[3][3];
         int count = 0;
         int limitPatience = 0;
+final char X ='X';
+        final char O ='O';
 
         System.out.println("----------Game XO----------");
         System.out.println("Представим поле видом «цифровой клавиатуры»");
@@ -34,7 +36,7 @@ public class GameXO {
                 break;
             }
             try {
-                char xo = count % 2 == 0 ? 'X' : 'O';//каждый ход миняем знак либо Х либо О
+                char xo = count % 2 == 0 ? X : O;//каждый ход миняем знак либо Х либо О
                 System.out.print("Ход игрока " + xo + " : ");
                 int number;
                 if(xo=='O'){
