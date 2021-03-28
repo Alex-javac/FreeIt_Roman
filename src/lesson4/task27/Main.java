@@ -3,14 +3,16 @@ package lesson4.task27;
 import lesson4.Task25;
 
 import java.math.BigInteger;
-import java.util.GregorianCalendar;
+import java.time.Month;
+import java.time.YearMonth;
+
 
 //Создать иерархию классов, описывающих банковские карточки.
 //Иерархия должна иметь хотя бы три уровня.
 public class Main {
     public static void main(String[] args) {
-        GregorianCalendar c = new GregorianCalendar(2025, 01, 25);
-        Visa cardVisa = new Visa(BigInteger.valueOf(1234123232),321,"Alexander",c,1000);
+        YearMonth yearMonth = YearMonth.of(2025, Month.JANUARY);
+        Visa cardVisa = new Visa(BigInteger.valueOf(1234123232),321,"Alexander",yearMonth,1000);
         System.out.println(cardVisa.toString());
         cardVisa.addFunds(120);
         cardVisa.debit(20);

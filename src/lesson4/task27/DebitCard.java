@@ -1,14 +1,14 @@
 package lesson4.task27;
 
 import java.math.BigInteger;
-import java.util.GregorianCalendar;
+import java.time.YearMonth;
 
 public abstract class DebitCard extends Card {
     String customerName;
-    GregorianCalendar expiryDate;
+    YearMonth expiryDate;
     int found;
 
-    public DebitCard(BigInteger numbCard, int cvv, String customerName, GregorianCalendar expiryDate, int found) {
+    public DebitCard(BigInteger numbCard, int cvv, String customerName, YearMonth expiryDate, int found) {
         super(numbCard, cvv);
         this.customerName = customerName;
         this.expiryDate = expiryDate;
@@ -33,7 +33,7 @@ public abstract class DebitCard extends Card {
         this.customerName = customerName;
     }
 
-    public GregorianCalendar getExpiryDate() {
+    public YearMonth getExpiryDate() {
         return expiryDate;
     }
 

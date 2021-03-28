@@ -26,14 +26,17 @@ public class Task28<T extends Number> {
     public static void main(String[] args) {
         Integer [] i = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-        Task28 task28Int = new Task28(i);
-        System.out.println(task28Int.toString());
-        System.out.println(task28Int.getT(1));
+        Task28 task28Integer = new Task28(i);
+        System.out.println(task28Integer.toString());
+        System.out.println(task28Integer.getT(1));
 
         Long[] l = new Long[]{10L, 20L, 30L, 40L};
 
         Task28 task28Long = new Task28(l);
         System.out.println(task28Long.toString());
         System.out.println(task28Long.getT(1));
+
+        int[] ints ={9,8,7,6,5,4,3,2,1};
+        //Task28 task28Int = new Task28(ints);
     }
 }

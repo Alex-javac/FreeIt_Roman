@@ -31,15 +31,13 @@ public class Task24 {
     //отрицательное, если вызывающий объект меньше объекта, переданного в качестве параметра;
     //нуль, если объекты равны.
     public int checkTime(Task24 task24) {
-        int res;
         if (task24.getSecondsAll() < getSecondsAll()) {
-            res = 1;
+            return 1;
         } else if (task24.getSecondsAll() > getSecondsAll()) {
-            res = -1;
+            return -1;
         } else {
-            res = 0;
+            return 0;
         }
-        return res;
     }
 
     public int getSecondsAll() {

@@ -1,16 +1,16 @@
 package lesson4.task27;
 
 import java.math.BigInteger;
-import java.util.GregorianCalendar;
+import java.time.YearMonth;
 
 public class MasterCard extends DebitCard{
-    private final char VALUTA ='€';
+    private Valuta VALUTA = Valuta.EUR;
 
-    public char getVALUTA() {
+    public Valuta getVALUTA() {
         return VALUTA;
     }
 
-    public MasterCard(BigInteger numbCard, int cvv, String customerName, GregorianCalendar expiryDate, int found) {
+    public MasterCard(BigInteger numbCard, int cvv, String customerName, YearMonth expiryDate, int found) {
         super(numbCard, cvv, customerName, expiryDate, found);
     }
 }
