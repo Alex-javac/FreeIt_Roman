@@ -1,8 +1,6 @@
 package lesson7;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
 
 //Имеется текст. Следует составить для него частотный словарь.
 public class Task32 {
@@ -18,9 +16,21 @@ public class Task32 {
         while (tokenizer.hasMoreTokens()) {
             list.add(tokenizer.nextToken());
         }
+        Map<String, Integer> words = new HashMap<>();
         for (String str : list) {
-            System.out.println(str);
+            if (words.containsKey(str)) {
+                int count = words.get(str);
+                words.put(str, count + 1);
+            } else {
+                words.put(str, 1);
+            }
         }
 
+        int countWords = 0;
+        for (Map.Entry<String, Integer> map : words.entrySet()) {
+            System.out.println(map.getKey() + " : " + map.getValue());
+            countWords += map.getValue();
+        }
+        System.out.println("кол-во слов в List: " + list.size() + " ___ кол-во слов в Map: " + countWords);
     }
 }
