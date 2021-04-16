@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="device">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="name" type="xsd:string" id="ID"/>
+                <xsd:element name="origin" type="xsd:string"/>
+                <xsd:element name="price" type="xsd:double" minOccurs="1" maxOccurs="999"/>
+                <xsd:element name="type">
+                    <xsd:complexType>
+                        <xsd:group ref="Type"/>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Critical" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+<xsd:group name="Type">
+    <xsd:all>
+        <xsd:element name="cooler" type="xsd:boolean"/>
+        <xsd:element name="energy" type="xsd:integer"/>
+        <xsd:element name="ports">
+            <xsd:complexType>
+                <xsd:choice>
+                    <xsd:element name="USB" type="simpleString"/>
+                    <xsd:element name="COM" type="simpleString"/>
+                    <xsd:element name="LPT" type="simpleString"/>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:all>
+</xsd:group>
+
+
+    <xsd:simpleType name="simpleString">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[A-Z]{3}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+</xsd:schema>
