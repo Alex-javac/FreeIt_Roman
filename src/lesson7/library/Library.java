@@ -25,34 +25,47 @@ public class Library {
     }
 
     public Map<Integer, Book> getAllBooks() {
-
         return listBooks;
     }
 
     public void removeBook(int id) {
         if(listBooks.containsKey(id)){
             listBooks.remove(id);
+            System.out.println("Книга успешно удалена");
         }else {
             System.out.println("Книга с таким ID отсутствует в библиотеке");
         }
     }
-   public void editBook(Book book){
-        try {
-            System.out.print("Новый жанр книги: ");
-            Scanner scanner = new Scanner(System.in);
-            String genre = scanner.nextLine();
-            book.setGenre(Genre.valueOf(genre.toUpperCase()));
-            System.out.print("Новое название книги: ");
-            String title = scanner.nextLine();
-            book.setTitle(title);
-        }catch (IllegalArgumentException e){
-            System.out.println("Выбирите жанр из предложеных:");
-            for (Genre genre : Genre.values()){
-                System.out.print(genre+" ");
-            }
-            System.out.println();
-            editBook(book);
-        }
-    }
-
+   public void editBook(Library library ,Book book) {
+       System.out.println("Вы хотите отредактировать эту книгу: " + book.getTitle() + " " + book.getGenre());
+       Scanner scanner = new Scanner(System.in);
+       System.out.println("Нажмите \"1\" чтобы продолжить");
+       System.out.println("Нажмите \"2\" чтоб вернуться в главное меню");
+       String num = scanner.nextLine();
+       switch (num) {
+           case "1":
+               try {
+                   System.out.print("Новый жанр книги: ");
+                   String genre = scanner.nextLine();
+                   book.setGenre(Genre.valueOf(genre.toUpperCase()));
+                   System.out.print("Новое название книги: ");
+                   String title = scanner.nextLine();
+                   book.setTitle(title);
+                   System.out.println("Книга успешно отредактирована");
+               } catch (IllegalArgumentException e) {
+                   System.out.println("Выбирите жанр из предложеных:");
+                   for (Genre genre : Genre.values()) {
+                       System.out.print(genre + " ");
+                   }
+                   System.out.println();
+                   editBook(library,book);
+               }
+               break;
+           case "2":
+               Application.start(library);
+               break;
+           default:
+               editBook(library,book);
+       }
+   }
 }

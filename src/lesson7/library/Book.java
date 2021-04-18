@@ -10,9 +10,10 @@ public class Book {
     private final int id;
     private Genre genre;
     private String title;
-
+private static int counter=0;
     public Book(Genre genre, String title) {
-        this.id= Math.abs(genre.hashCode() + title.hashCode());
+        counter++;
+        id=counter;
         this.genre = genre;
         this.title = title;
     }
