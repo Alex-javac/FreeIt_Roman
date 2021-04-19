@@ -36,14 +36,8 @@ public class Library {
             System.out.println("Книга с таким ID отсутствует в библиотеке");
         }
     }
-   public void editBook(Library library ,Book book) {
-       System.out.println("Вы хотите отредактировать эту книгу: " + book.getTitle() + " " + book.getGenre());
+   public void editBook(Book book) {
        Scanner scanner = new Scanner(System.in);
-       System.out.println("Нажмите \"1\" чтобы продолжить");
-       System.out.println("Нажмите \"2\" чтоб вернуться в главное меню");
-       String num = scanner.nextLine();
-       switch (num) {
-           case "1":
                try {
                    System.out.print("Новый жанр книги: ");
                    String genre = scanner.nextLine();
@@ -58,14 +52,8 @@ public class Library {
                        System.out.print(genre + " ");
                    }
                    System.out.println();
-                   editBook(library,book);
+                   editBook(book);
                }
-               break;
-           case "2":
-               Application.start(library);
-               break;
-           default:
-               editBook(library,book);
-       }
+
    }
 }

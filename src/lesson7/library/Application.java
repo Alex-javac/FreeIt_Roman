@@ -82,6 +82,7 @@ public class Application {
                     System.out.println(title);
                     break;
                 case "3":
+                    Collections.reverse(title);
                     System.out.println(title);
                     break;
                 case "4":
@@ -127,7 +128,10 @@ public class Application {
             System.out.print("ID : ");
             int idRedactor = scanner.nextInt();
             if (library.getAllBooks().containsKey(idRedactor)) {
-                library.editBook(library, library.getAllBooks().get(idRedactor));
+                System.out.println("Вы хотите отредактировать эту книгу: " + library.getAllBooks().get(idRedactor).getTitle() + " " + library.getAllBooks().get(idRedactor).getGenre());
+                if(yesNo()) {
+                    library.editBook(library.getAllBooks().get(idRedactor));
+                }
             } else {
                 System.out.println("Книга с таким ID отсутствует в библиотеке");
             }
