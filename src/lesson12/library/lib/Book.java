@@ -10,6 +10,8 @@ public class Book {
     private final int id;
     private Genre genre;
     private String title;
+    private BookCondition bookCondition;
+    private boolean canTakeBook;
 private static int counter=0;
     public Book(Genre genre, String title) {
         counter++;
@@ -36,6 +38,22 @@ private static int counter=0;
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public BookCondition getBookCondition() {
+        return bookCondition;
+    }
+
+    public void setBookCondition(BookCondition bookCondition) {
+        this.bookCondition = bookCondition;
+    }
+
+    public boolean isCanTakeBook() {
+        return canTakeBook;
+    }
+
+    public void setCanTakeBook(boolean canTakeBook) {
+        this.canTakeBook = canTakeBook;
     }
 
     @Override
