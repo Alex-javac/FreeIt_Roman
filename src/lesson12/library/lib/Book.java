@@ -1,23 +1,30 @@
 package lesson12.library.lib;
 
-//Создать класс Книга, поля:
-//• id (целое число)
-//• title (строка)
-//• genre (строка)
-// (Если вы уже в себе уверены, создавайте еще один класс Genre и в класс Book вмест genre включайте genreId,
-// который будет ссылаться на жанр с соответствующим id)
+import javax.xml.bind.annotation.*;
+
+
+@XmlRootElement
 public class Book {
-    private final int id;
+    @XmlAttribute
+    private int id;
     private Genre genre;
     private String title;
+    private String author;
+
     private BookCondition bookCondition;
     private boolean canTakeBook;
-private static int counter=0;
-    public Book(Genre genre, String title) {
+    private static int counter = 0;
+
+    public Book() {
         counter++;
-        id=counter;
+    }
+
+    public Book(Genre genre, String title, String author) {
+        counter++;
+        id = counter;
         this.genre = genre;
         this.title = title;
+        this.author = author;
     }
 
     public int getId() {
@@ -30,6 +37,14 @@ private static int counter=0;
 
     public String getTitle() {
         return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public void setGenre(Genre genre) {
@@ -52,6 +67,10 @@ private static int counter=0;
         return canTakeBook;
     }
 
+    public static int getCounter() {
+        return counter;
+    }
+    @XmlTransient
     public void setCanTakeBook(boolean canTakeBook) {
         this.canTakeBook = canTakeBook;
     }
@@ -62,6 +81,7 @@ private static int counter=0;
                 "id=" + id +
                 ", genre=" + genre +
                 ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
                 '}';
     }
 }

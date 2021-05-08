@@ -17,7 +17,11 @@ public class Library {
         }
     }
 
-    public void giveOut(Book book) {
+    public boolean giveOut(Book book) {
+        boolean flag = false;
+        if (book == null) {
+            return flag;
+        }
         BookCondition condition = book.getBookCondition();
         switch (condition) {
             case IN_LIBRARY:
@@ -26,11 +30,13 @@ public class Library {
                     listBooks.remove(book.getId());
                     book.setBookCondition(BookCondition.HANDED_OUT);
                     outOfLibrary.add(book);
+                    flag = true;
                 } else {
                     System.out.println("Эта книга только для читального зала");
                     listBooks.remove(book.getId());
                     book.setBookCondition(BookCondition.READING_ROOM);
                     inReadingRoom.add(book);
+                    flag = true;
                 }
                 break;
             case READING_ROOM:
@@ -39,31 +45,46 @@ public class Library {
             case HANDED_OUT:
                 System.out.println("Книгу выдали на руки");
                 break;
+
             default:
                 System.out.println("Книга не в учете");
+
         }
+        return flag;
     }
 
-    public void returnBook (Book book){
+    public void returnBook(Book book) {
         BookCondition condition = book.getBookCondition();
         switch (condition) {
             case IN_LIBRARY:
                 System.out.println("Книга в библиотеке");
                 break;
             case READING_ROOM:
-                System.out.println("Спасибо, очень интересная книга(была в читальном зале)");
+                System.out.println("Оо," + book.getTitle() + " очень интересная книга(была в читальном зале)");
                 inReadingRoom.remove(book);
                 listBooks.put(book.getId(), book);
                 book.setBookCondition(BookCondition.IN_LIBRARY);
                 break;
             case HANDED_OUT:
-                System.out.println("Спасибо, очень интересная книга(была выданна на руки)");
+                System.out.println("Оо," + book.getTitle() + " очень интересная книга(была выданна на руки)");
                 outOfLibrary.remove(book);
                 listBooks.put(book.getId(), book);
                 book.setBookCondition(BookCondition.IN_LIBRARY);
                 break;
             default:
                 System.out.println("Книга не в учете");
+        }
+    }
+
+    public Book getBook(int id) {
+        if (listBooks.containsKey(id)) {
+            return listBooks.get(id);
+        } else if (outOfLibrary.contains(id)) {
+            return outOfLibrary.get(id);
+        } else if (inReadingRoom.contains(id)) {
+            return inReadingRoom.get(id);
+        } else {
+            return null;
         }
     }
 

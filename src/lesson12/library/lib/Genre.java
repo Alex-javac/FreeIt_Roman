@@ -1,5 +1,9 @@
 package lesson12.library.lib;
 
+import javax.xml.bind.annotation.XmlEnum;
+
+
+@XmlEnum
 public enum Genre {
     CRIME, //Криминальная проза, детектив
     DETECTIVE, //Детектив
